@@ -915,11 +915,4 @@ async function handleGroupParticipantUpdate(sock, update) {
     }
 }
 
-// Instead, export the handlers along with handleMessages
-module.exports = {
-    handleMessages,
-    handleGroupParticipantUpdate,
-    handleStatus: async (sock, status) => {
-        await handleStatusUpdate(sock, status);
-    }
-};
+// 
